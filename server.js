@@ -30,4 +30,26 @@ console.log(`Hola ${name}`)
 // let num2 = 33
 // console.log(litNum(num1,num2))
 
-//Ejercicio 5
+//Ejercicio 6
+// import sentenceLeingth from "./funcion6.js"
+// let texto = "Hola mundo"
+// console.log(`La longitud de "${texto}" es ${sentenceLeingth(texto)}`)
+
+//Ejercicio 7
+// import readline from "node:readline/promises";
+// import { stdin as input, stdout as output } from "node:process";
+
+// const rl = readline.createInterface({ input, output });
+
+// // const valor = Number(await rl.question("Write a valeu: "));
+// import numeroAleatorio from "./randomNum.js"
+// let valor = numeroAleatorio()
+// rl.close();
+// import consecutiveValeus from "./funcion6.js"
+// console.log(`Your valeu was ${valor} and I give you ${consecutiveValeus(valor)}`)
+
+//Ejercicio 8
+import datos from "./modulo.js";
+
+console.log(datos.boolean);     
+console.log(datos.object.c);     
