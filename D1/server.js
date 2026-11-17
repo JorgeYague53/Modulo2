@@ -49,7 +49,13 @@ console.log(`Hola ${name}`)
 // console.log(`Your valeu was ${valor} and I give you ${consecutiveValeus(valor)}`)
 
 //Ejercicio 8
-import datos from "./modulo.js";
+// import datos from "./modulo.js";
 
-console.log(datos.boolean);     
-console.log(datos.object.c);     
+// console.log(datos.boolean);     
+// console.log(datos.object.c);     
+
+//Ejercicio 9
+import numeroAleatorio from "./randomNum.js"
+import esPar from "./esPar.js"
+let valor = numeroAleatorio()
+console.log(`Your valeu is ${valor} and if you said it's EVEN I say ${esPar(valor)}.`)
