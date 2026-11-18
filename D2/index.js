@@ -68,8 +68,8 @@ app.use(c())
 //   res.json(clase);
 // });
 
-// app.get("/push", (req, res) =>{
-//     res.json( clase.push("hugo"))
+// app.get("/push/:teacher", (req, res) =>{
+//     clase.push(req.params.teacher)
 // })
 
 //Ejercicio 7
