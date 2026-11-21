@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>
+<button id="btn">Mostrar Persona</button>
+<div id="personas"></div>
+</div>
+</body>
+<script>
+    fetch("http://localhost:3001/personas").then(res => res.json()).then(data => {
+        console.log(data)
+    })
+        async function showPersona() {
+        const res = await fetch("http://localhost:3001/personas");
+        const data = await res.json();
+
+        document.getElementById("personas").innerHTML = data.map(p => `
+            <div>
+                <h3>${p.nombre}</h3>
+                <h3>${p.apellido}</h3>
+                <h4>${p.edad}</h4>
+            </div>
+        `).join("");
+    }
+
+    document.getElementById("btn").addEventListener("click", showPersona);
+</script>
+</html>

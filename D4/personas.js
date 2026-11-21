@@ -11,5 +11,13 @@ const persona = [
     }
 
 ]
-
+function showPersona() {
+    `<div>
+        <h1>${persona.nombre}</h1>
+        <h2>${persona.apellido}</h2>
+        <h3>${persona.edad}</h3>
+    </div>`
+    console.log(persona)
+}
+export { persona, showPersona }
 export default persona
